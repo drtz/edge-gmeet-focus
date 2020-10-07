@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "GMeet Focus",
+  "author": "Danny Raetsch",
+  "version": "1.0",
+  "description": "Remove distractions from Google Meet by hiding chat notifications and self display.",
+  "permissions": [
+    "*://meet.google.com/*"
+  ], 
+  "browser_action": {
+    "default_title": "GMeet Focus"
+  },
+  "content_scripts": [{
+    "css": ["style.css"],
+    "matches": ["*://meet.google.com/*"]
+  }]
+}
+
